@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ops Bangun Ruang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Operasi Bangun Ruang</h1>
+    <div class="boxes">
+        <!-- persegi -->
+        <div class="box">
+            <h2>Persegi</h2>
+            <div class="input">
+                <label for="sisiPersegi">Sisi :</label>
+                <input type="number" class="sisiPersegi" id="sisiPersegi" placeholder="Masukkan sisi Persegi"><br>
+                <label for="hasil" id="lHasil">Hasil : </label>
+                <input type="disabled" class="hasil" id="hasil" placeholder="Hasilnya" disabled>
+                <div class="btn">
+                    <button class="kll">Keliling</button>
+                    <button class="luas">Luas</button>
+                    <button class="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+        <!-- persegi panjang -->
+        <div class="box">
+            <h2>Persegi Panjang</h2>
+            <div class="input">
+                <label for="pPsgPjg">Panjang :</label>
+                <input type="number" id="pPsgPjg" placeholder="Masukkan sisi Persegi"><br>
+                <label for="lPsgPjg">Lebar :</label>
+                <input type="number" id="lPsgPjg" placeholder="Masukkan sisi Persegi"><br>
+                <label for="hasil" id="lHasilP">Hasil : </label>
+                <input type="disabled" class="hasil" id="hasilP" placeholder="Hasilnya" disabled>
+                <div class="btn">
+                    <button class="kllP">Keliling</button>
+                    <button class="luasP">Luas</button>
+                    <button class="resetP">Reset</button>
+                </div>
+            </div>
+        </div>
+        <!-- segitiga -->
+        <div class="box">
+            <h2>Segitiga</h2>
+            <div class="dualInput">
+                <div class="input" id="inputS">
+                    <label for="sisiSA">Sisi A :</label>
+                    <input type="number" id="sisiSA" placeholder="Masukkan Sisi A"><br>
+                    <label for="sisiSB">Sisi B :</label>
+                    <input type="number" id="sisiSB" placeholder="Masukkan Sisi B"><br>
+                    <label for="sisiSC">Sisi C :</label>
+                    <input type="number" id="sisiSC" placeholder="Masukkan Sisi C"><br>
+                </div>
+                <div class="input" id="inputLS">
+                    <label for="alasS">Alas Segitiga :</label>
+                    <input type="number" id="alasS" placeholder="Masukkan Alas Segitiga"><br>
+                    <label for="tinggiS">Tinggi Segitiga :</label>
+                    <input type="number" id="tinggiS" placeholder="Masukkan Tinggi Segitiga"><br>
+                    <label for="hasilS" id="lHasilS">Hasil : </label>
+                    <input type="disabled" class="hasil" id="hasilS" placeholder="Hasilnya" disabled>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="kllS">Keliling</button>
+                <button class="luasS">Luas</button>
+                <button class="resetS">Reset</button>
+            </div>
+        </div>
+        <!-- belah ketupat -->
+        <div class="box" id="bKetupat">
+            <h2>Belah Ketupat</h2>
+            <div class="dualInput">
+                <div class="input" id="inputDiag">
+                    <label for="diagA">Diagonal A :</label>
+                    <input type="number" id="diagA" placeholder="Masukkan Diagonal A"><br>
+                    <label for="diagB">Diagonal B :</label>
+                    <input type="number" id="diagB" placeholder="Masukkan Sisi B"><br>
+                </div>
+                <div class="input" id="inputSBK">
+                    <label for="sisiBK">Sisi Belah Ketupat :</label>
+                    <input type="number" id="sisiBK" placeholder="Masukkan Sisi Belah Ketupat"><br>
+                    <label for="hasilBK" id="lHasilBK">Hasil : </label>
+                    <input type="disabled" class="hasil" id="hasilBK" placeholder="Hasilnya" disabled>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="kllBK">Keliling</button>
+                <button class="luasBK">Luas</button>
+                <button class="resetBK">Reset</button>
+            </div>
+        </div>
+        <!-- belah ketupat -->
+        <div class="box" id="bKetupat">
+            <h2>Trapesium</h2>
+            <div class="dualInput">
+                <div class="input" id="inputTraS">
+                    <label for="traA">Sisi A :</label>
+                    <input type="number" id="traA" placeholder="Masukkan Sisi A"><br>
+                    <label for="traB">Sisi B :</label>
+                    <input type="number" id="traB" placeholder="Masukkan Sisi B"><br>
+                    <label for="traC">Sisi D :</label>
+                    <input type="number" id="traC" placeholder="Masukkan Sisi C"><br>
+                    <label for="traD">Sisi D :</label>
+                    <input type="number" id="traD" placeholder="Masukkan Sisi D"><br>
+                </div>
+                <div class="input" id="inputAlasTra">
+                    <label for="tralasA">Alas A :</label>
+                    <input type="number" id="tralasA" placeholder="Masukkan Sisi Belah Ketupat"><br>
+                    <label for="tralasB">Alas B :</label>
+                    <input type="number" id="tralasB" placeholder="Masukkan Sisi Belah Ketupat"><br>
+                    <label for="traTinggi">Tinggi :</label>
+                    <input type="number" id="traTinggi" placeholder="Masukkan Sisi Belah Ketupat"><br>
+                    <label for="hasilTra" id="lHasilTra">Hasil : </label>
+                    <input type="disabled" class="hasil" id="hasilTra" placeholder="Hasilnya" disabled>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="kllTra">Keliling</button>
+                <button class="luasTra">Luas</button>
+                <button class="resetTra">Reset</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

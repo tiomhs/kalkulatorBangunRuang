@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html,body{
+    background-color: #FAF7F0;
+    font-size: 12px;
+}
+
+body, h1{
+    text-align: center;
+    margin: 20px 0 10px;
+    color: #98A8F8;
+    text-shadow: #BCCEF8;
+    
+}
+
+.box {
+    width: 60%;
+    padding: 30px;
+    margin: 20px auto;
+    background-color: #CDFCF6;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px #BCCEF8;
+}
+
+.box h2{
+    text-align: center;
+    margin: 10px 0 20px;
+    color: #98A8F8;
+}
+
+.dualInput {
+    display: flex;
+}
+
+.input label{
+    font-size: 1rem ;
+    font-weight: lighter;
+    color:#98A8F8 ;
+}
+.input {
+    /* width: 60%; */
+    margin: auto;
+}
+input {
+    width: 95%;
+    height: 2.5rem;
+    padding: 12px 20px;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 2px solid #BCCEF8;;
+}
+
+input::placeholder{
+    color:#BCCEF8;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    width: 30%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 10px 0 0 0;
+    background-color: #98A8F8;
+    color: white;
+}
+
+button:hover{
+    background-color: white;
+    border: 1px solid #98A8F8;
+    color: #98A8F8;
+}
+
+@media screen and (min-width:768px){
+    .boxes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .input{
+        width: 90%;
+    }
+    .box{
+        width: 40%;
+        margin: 20px  auto;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .input{
+        width: 90%;
+    }
+
+    .boxes{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .box{
+        width: 25%;
+    }
+}
